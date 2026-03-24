@@ -1,0 +1,62 @@
+# Flutter / Dart build artifacts
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+
+# Android
+android/.gradle/
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+android/key.properties
+**/android/gradle/wrapper/gradle-wrapper.jar
+**/android/**/GeneratedPluginRegistrant.*
+
+# iOS
+ios/.last_build_id
+ios/Pods/
+ios/Flutter/ephemeral/
+ios/.symlinks/
+ios/Runner/GeneratedPluginRegistrant.*
+ios/Runner/GeneratedPluginRegistrant.h
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Debug.xcconfig
+ios/Flutter/Release.xcconfig
+ios/Flutter/AppFrameworkInfo.plist
+ios/Flutter/Generated.xcconfig
+
+# Google services (keep placeholders, ignore real secrets)
+# android/app/google-services.json
+# ios/Runner/GoogleService-Info.plist
+
+# macOS
+macos/Flutter/ephemeral/
+**/macos/Flutter/GeneratedPluginRegistrant.*
+
+# Linux
+linux/flutter/ephemeral/
+
+# Windows
+windows/flutter/ephemeral/
+
+# Web
+lib/generated_plugin_registrant.dart
+
+# Coverage
+coverage/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# macOS
+.DS_Store

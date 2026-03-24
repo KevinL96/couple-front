@@ -1,0 +1,56 @@
+name: couple_front
+description: A Flutter app for couples with Firebase authentication and a beautiful dashboard.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  google_sign_in: ^6.2.1
+
+  # UI / Animations
+  cupertino_icons: ^1.0.6
+  flutter_animate: ^4.5.0
+  lottie: ^3.0.0
+  shimmer: ^3.0.0
+  cached_network_image: ^3.3.1
+
+  # State management
+  provider: ^6.1.2
+
+  # Utilities
+  shared_preferences: ^2.2.2
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  mockito: ^5.4.4
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  # To use Poppins, download fonts from https://fonts.google.com/specimen/Poppins
+  # place them in assets/fonts/ and uncomment the block below:
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/fonts/Poppins-Regular.ttf
+  #       - asset: assets/fonts/Poppins-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/Poppins-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/Poppins-Bold.ttf
+  #         weight: 700

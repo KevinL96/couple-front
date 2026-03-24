@@ -1,4 +1,4 @@
-package com.example.couple_front
+package com.couple_front.release
 
 import io.flutter.embedding.android.FlutterActivity
 

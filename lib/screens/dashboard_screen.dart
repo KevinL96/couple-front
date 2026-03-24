@@ -90,7 +90,8 @@ class _DashboardScreenState extends State<DashboardScreen>
   Widget build(BuildContext context) {
     final auth = context.watch<AuthProvider>();
     final user = auth.user;
-    final displayName = user?.displayName ?? user?.email?.split('@').first ?? 'Love';
+    final displayName =
+        user?.displayName ?? user?.email?.split('@').first ?? 'Love';
 
     return Scaffold(
       backgroundColor: AppTheme.backgroundLight,
@@ -222,7 +223,7 @@ class _DashboardScreenState extends State<DashboardScreen>
             ),
           ),
         ),
-        collapsingMode: CollapsingMode.parallax,
+        collapseMode: CollapseMode.parallax,
       ),
     );
   }
@@ -394,7 +395,8 @@ class _ProfileSheet extends StatelessWidget {
             onTap: () => Navigator.pop(context),
           ),
           ListTile(
-            leading: const Icon(Icons.settings_rounded, color: AppTheme.primary),
+            leading:
+                const Icon(Icons.settings_rounded, color: AppTheme.primary),
             title: const Text('Settings'),
             onTap: () => Navigator.pop(context),
           ),

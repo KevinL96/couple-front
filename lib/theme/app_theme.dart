@@ -36,7 +36,7 @@ class AppTheme {
 
   static ThemeData get lightTheme {
     return ThemeData(
-      useMaterial3: true,
+      useMaterial3: false,
       colorScheme: ColorScheme.fromSeed(
         seedColor: primary,
         primary: primary,
@@ -77,7 +77,8 @@ class AppTheme {
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: Colors.white,
-        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+        contentPadding:
+            const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
           borderSide: BorderSide.none,
@@ -94,16 +95,9 @@ class AppTheme {
           borderRadius: BorderRadius.circular(16),
           borderSide: const BorderSide(color: Colors.red),
         ),
-        hintStyle: TextStyle(color: Colors.grey.shade400, fontFamily: 'Poppins'),
+        hintStyle:
+            TextStyle(color: Colors.grey.shade400, fontFamily: 'Poppins'),
         labelStyle: const TextStyle(fontFamily: 'Poppins'),
-      ),
-      cardTheme: CardTheme(
-        elevation: 8,
-        shadowColor: Colors.black.withOpacity(0.1),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
-        color: cardLight,
       ),
     );
   }
